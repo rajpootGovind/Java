@@ -1,64 +1,58 @@
-package pillers;
-abstract class Bird
-{
+package OOP;
+
+abstract class Bird {
     public abstract void eat();
+
     public abstract void fly();
 }
-abstract class Eagle extends Bird
-{
-  public void fly()
-  {
-      System.out.println("Eagle fly at high height");
-  }
+
+abstract class Eagle extends Bird {
+    public void fly() {
+        System.out.println("Eagle fly at high height");
+    }
 }
-abstract class Sparrow extends Bird
-{
-    public void fly()
-    {
+
+abstract class Sparrow extends Bird {
+    public void fly() {
         System.out.println("Sparrow fly at lower height");
     }
 }
-class GoldenEagle extends Eagle
-{
-    public void eat()
-    {
+
+class GoldenEagle extends Eagle {
+    public void eat() {
         System.out.println("hunt and eat on sea");
     }
 }
-class SerpentEagle extends Eagle
-{
+
+class SerpentEagle extends Eagle {
     @Override
-    public void eat()
-    {
+    public void eat() {
         System.out.println("hunt and eat on mountain");
     }
 }
-class VegSparrow extends Sparrow
-{
-    public void eat()
-    {
+
+class VegSparrow extends Sparrow {
+    public void eat() {
         System.out.println("eat grass and vegies");
     }
 }
-class NonvegSparrow extends Sparrow
-{
+
+class NonvegSparrow extends Sparrow {
     @Override
-    public void eat()
-    {
+    public void eat() {
         System.out.println("eat caterpiller and insects");
     }
 }
-class Sky
-{
-    public void permit(Bird ref)
-    {
+
+class Sky {
+    public void permit(Bird ref) {
         ref.eat();
         ref.fly();
-        System.out.println( );
+        System.out.println();
     }
 }
-public class Combine
-{
+
+public class Combine {
     public static void main(String[] args) {
         GoldenEagle ge = new GoldenEagle();
         SerpentEagle se = new SerpentEagle();

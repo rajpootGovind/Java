@@ -1,4 +1,4 @@
-package pwskills;
+package OOP;
 
 public class Capacity {
     public static void main(String[] args) {
@@ -16,7 +16,6 @@ public class Capacity {
         System.out.println(sb3);
         sb3.trimToSize();
         System.out.println(sb3.capacity());
-
 
     }
 }
